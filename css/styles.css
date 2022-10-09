@@ -18,6 +18,14 @@ h1 {
   color: white;
 }
 
+h2 {
+  font-family: "Montserrat-Black", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+  color: white;
+}
+
 h3 {
   font-family: "Montserrat-Bold", sans-serif;
   font-weight: bold;
@@ -39,7 +47,7 @@ p {
 }
 
 .nav-item {
-  padding: 0 12px;
+  padding: 0 12px; /*Space between the options*/
 }
 
 .nav-link {
@@ -68,7 +76,7 @@ p {
 
 .feature-box {
   text-align: center;
-  padding: 5%;
+  padding: 5%; /*To make the line shorter and be easier to read*/
 }
 
 .icon {
@@ -78,4 +86,33 @@ p {
 
 .icon:hover {
   color: #ff4c68;
+}
+
+/*Testimonials*/
+
+#testimonials {
+  text-align: center;
+  background-color: #ef8172;
+  color: white;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
 }
