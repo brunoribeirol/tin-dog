@@ -1,16 +1,24 @@
 body {
   font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 
-#title {
-  background-color: #ff4c68;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat-Bold", sans-serif;
 }
 
-.container-fluid {
-  padding: 3% 15% 7%;
+p {
+  color: rgb(153, 151, 151);
 }
 
-h1 {
+/* Headings*/
+
+.big-heading {
   font-family: "Montserrat-Black", sans-serif;
   font-size: 3.5rem;
   line-height: 1.5;
@@ -18,20 +26,26 @@ h1 {
   color: white;
 }
 
-h2 {
-  font-family: "Montserrat-Black", sans-serif;
+.section-heading {
   font-size: 2.5rem;
   line-height: 1.5;
   font-weight: 900;
 }
 
-h3 {
-  font-family: "Montserrat-Bold", sans-serif;
-  font-weight: bold;
+/*Containers*/
+
+.container-fluid {
+  padding: 7% 15%;
 }
 
-p {
-  color: rgb(153, 151, 151);
+/*Sections*/
+.colored-section {
+  background-color: #ff4c68;
+  color: white;
+}
+
+.white-section {
+  background-color: white;
 }
 
 /*Navigation Bar*/
@@ -60,6 +74,13 @@ p {
   margin: 5% 3% 5% 0;
 }
 
+/*Title Section*/
+
+#title .container-fluid {
+  padding: 3% 15%;
+  text-align: left;
+}
+
 /*Title Image*/
 
 .title-image {
@@ -69,21 +90,23 @@ p {
   right: 30%;
 }
 
-.positioning{
+.positioning {
   position: relative;
 }
- 
-/*Features*/
+
+/*Features Section*/
 
 #features {
-  padding: 7% 15%;
-  background-color: white;
   position: relative;
   z-index: 1;
 }
 
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 .feature-box {
-  text-align: center;
   padding: 5%; /*To make the line shorter and be easier to read*/
 }
 
@@ -96,12 +119,16 @@ p {
   color: #ff4c68;
 }
 
-/*Testimonials*/
+/*Testimonials Section*/
 
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
-  color: white;
+}
+
+.testimonial-text {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: 900;
 }
 
 .testimonial-image {
@@ -110,13 +137,8 @@ p {
   margin: 20px;
 }
 
-.carousel-item {
-  padding: 7% 15%;
-}
-
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
@@ -125,14 +147,39 @@ p {
   margin: 20px 20px 50px;
 }
 
-/*Pricing*/
+/*Pricing Section*/
 
 #pricing {
   padding: 50px;
-  text-align: center;
 }
 
-.pricing-column{
-padding: 3% 2%;
+.price-text {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: 900;
 }
 
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.card-header h3 {
+  font-weight: bold;
+}
+
+/*Footer Section*/
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
